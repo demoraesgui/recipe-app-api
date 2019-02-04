@@ -10,7 +10,7 @@ install:
   - pip install pipenv
   - pipenv sync
 
-  script:
-    - python manage.py test && flake8
+script:
+  - python manage.py test && flake8
 
 
