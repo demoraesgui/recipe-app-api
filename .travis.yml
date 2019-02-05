@@ -16,7 +16,7 @@ install:
 jobs:  
   include:
     - stage: "Tests" # naming the Tests stage
-    - script: python manage.py test
+      script: python manage.py test
       name: "Unit Tests"
     - script: flake8
       name: "Linting"   
