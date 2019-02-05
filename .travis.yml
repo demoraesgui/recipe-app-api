@@ -1,18 +1,17 @@
 language: python
 
-cache: pip
 
 python:
   - 3.6
 
 services:
-  - docker
+  - postgresql
 
 
 install:
-  - pip install pipenv docker-compose
+  - pip install pipenv 
   - pipenv sync
-  - docker-compose up -d
+  
 
 jobs:  
   include:
