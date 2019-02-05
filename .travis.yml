@@ -6,12 +6,13 @@ python:
   - 3.6
 
 services:
-  - postgresql
+  - docker
 
 
 install:
-  - pip install pipenv
+  - pip install pipenv docker-compose
   - pipenv sync
+  - docker-compose up -d
 
 jobs:  
   include:
