@@ -44,7 +44,7 @@ class ModelTests(TestCase):
 
         email = 'test@gambs.com'
         password = 'testpassword123'
-        user = get_user_model().objects.create_super_user(email, password)
+        user = get_user_model().objects.create_superuser(email, password)
 
         self.assertTrue(user.is_staff)
         self.assertTrue(user.is_superuser)
