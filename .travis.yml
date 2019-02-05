@@ -20,7 +20,7 @@ env:
 install:
   - pip install pipenv 
   - pipenv sync
-  
+  - psql -c "CREATE DATABASE postgres;" -U postgres
 
 jobs:  
   include:
