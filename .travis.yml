@@ -7,20 +7,10 @@ python:
 services:
   - postgresql
 
-addons:
-  postgresql: "10"
-  apt:
-    packages:
-    - postgresql-10
-    - postgresql-client-10
-env:
-  global:
-  - PGPORT=5432
-
 install:
   - pip install pipenv 
   - pipenv sync
-  - psql -c "CREATE DATABASE postgres;" -U postgres
+
 
 jobs:  
   include:
