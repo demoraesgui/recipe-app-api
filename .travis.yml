@@ -1,16 +1,25 @@
 language: python
 
+cache: pip
+
 python:
   - 3.6
 
-services: postgresql
+services:
+  - postgresql
 
 
 install:
   - pip install pipenv
   - pipenv sync
 
-script:
-  - python manage.py test && flake8
+jobs:  
+  include:
+    - stage: "Unit Tests"                # naming the Tests stage
+      script: python manage.py test
+    - stage: 'Linting'
+      script: flake8   
+
+
 
 
