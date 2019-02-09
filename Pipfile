@@ -12,6 +12,7 @@ django = "==2.1.5"
 djangorestframework = "==3.9.1"
 flake8 = "*"
 psycopg2-binary = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.6"
