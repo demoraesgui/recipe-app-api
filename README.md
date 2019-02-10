@@ -19,3 +19,4 @@ python manage.py migrate
 python manage.py test
 python manage.py runserver
 ```
+If necessary run `python manage.py createsuperuser` to get access to the admin page.
