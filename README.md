@@ -8,8 +8,9 @@ This project was created to learn a bit more about Web Development by making a s
 Django and Django REST Framework was used to create this project.
 
 ## How to use?
-First you need to install [pipenv](https://pypi.org/project/pipenv/)
+Install [pipenv](https://pypi.org/project/pipenv/)
 and then run `pipenv sync`, to activate the virtual environment run `pipenv shell`.
+Make sure to have docker and docker-compose installed and then start postgres service by running `docker-compose up -d` 
 
 Then you can run:
 
